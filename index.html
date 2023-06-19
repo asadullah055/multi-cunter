@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <button id="btn">
+            <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <p>Add Coupon</p>
+        </button>
+    </main>
+    <div class="wrapper">
+        <div class="items"> </div>
+
+    </div>
+    <div class="overlay"></div>
+    <section class="side-bar">
+        <header class="header">
+            <h4>Add Coupon</h4>
+            <p>Add your coupon and necessary information from here</p>
+            <div class="close-icon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </header>
+        <form class="form" action="">
+            <div class="cop-banner">
+                <p>Coupon Banner Image</p>
+                <div class="upload-area">
+                    <div class="box" id="previewImage"></div>
+                    <input type="file" id="fileInput">
+
+                </div>
+            </div>
+            <div class="campaign">
+                <div class="campaign-title"><label for="">Campaign Name</label>
+                    <input class="campaign-name" type="text" placeholder="Campaign Name">
+                </div>
+                <div class="campaign-title"><label for="">Campaign Code</label>
+                    <input class="campaign-code" type="text" placeholder="Campaign Code">
+                </div>
+                <div class="campaign-title"><label for="">Coupon Validity Time</label>
+                    <input class="campaign-time" type="datetime-local">
+                </div>
+                <div class="campaign-title"><label for="">DISCOUNT</label>
+                    <input class="discount" type="number" placeholder="Discount Amount">
+                </div>
+                <div class="campaign-title"><label for="">Minimum Amount</label>
+                    <input class="min-amount" type="number" placeholder="Minimum Amount">
+                </div>
+            </div>
+        </form>
+        <footer class="footer">
+            <div class="btn-wrapper">
+                <button class="cancel">Cancel</button>
+                <button class="coupon-add">Add Coupon</button>
+            </div>
+        </footer>
+    </section>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
